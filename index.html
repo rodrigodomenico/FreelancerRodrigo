@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <script type="text/javascript" src="script/jquery.js"></script>
+    <script type="text/javascript">
+      $(document).on("scroll", function () {
+        if ($(document).scrollTop() > 100) {
+          //QUANDO O SCROLL PASSAR DOS 100px DO TOPO
+          $("nav").removeClass("menu-alto").addClass("menu-baixo");
+          $("ul").removeClass("menu-baixo-mob").addClass("menu-alto-mob"); //TROCA P CLASSE MENOR
+        } else {
+          $("nav").removeClass("menu-baixo").addClass("menu-alto"); //VOLTA P MENU GRANDE ORIGINAL
+          $("ul").removeClass("menu-alto-mob").addClass("menu-baixo-mob"); //TROCA P CLASSE MENOR
+        }
+      });
+    </script>
+    <title>Portifólio - Rodrigo Domenico</title>
+  </head>
+  <body>
+    <nav class="menu" id="">
+      <div class="logo">
+        <h4>Atendimentos: <span style="color: #9fa2ee">01</span></h4>
+      </div>
+      <ul class="nav-links menu-baixo-mob">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contatos">Contatos</a></li>
+      </ul>
+      <!--Menu hambuguer-->
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <script src="script/menu.js"></script>
+    <div class="div-primeira flex-div" id="home">
+      <img
+        class="vetor-grande"
+        src="img/undraw_real_time_sync_re_nky7.svg"
+        alt="Vetor Roxo"
+      />
+      <div class="card-principal card-conteudo flex-conteudo">
+        <h1>RODRIGO DOMENICO</h1>
+        <h2>DESENVOLVEDOR FREELANCER.</h2>
+        <section class="perfil-container container-tecnologias">
+          <h3>TECNOLOGIAS:</h3>
+          <div class="flex-alinhamento">
+            <div class="tecnologias">HTML</div>
+            <div class="tecnologias">CSS</div>
+            <div class="tecnologias">JavaScript</div>
+            <div class="tecnologias">ReactJS</div>
+            <div class="tecnologias">Angular</div>
+            <div class="tecnologias">WordPress</div>
+            <div class="tecnologias">Joomla</div>
+            <div class="tecnologias">MySQL</div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="div-segunda flex-div" id="sobre">
+      <div class="foto"></div>
+      <div class="flex-div paragrafo centralziar">
+        <h1>Sobre mim</h1>
+        <img class="vetor-medio" src="img/lupa-sobre.png" alt="Lupa" />
+        <br />
+        Sou formado em Análise e Desenvolvimento de Sistemas pela Estácio ( 2022
+        ) e sempre tive interesse em tecnologia e programação, essa paixão me
+        levou a escolher a carreira de programador, desde então, tenho me
+        dedicado a aprender e evoluir continuamente. <br /><br />
+        Procuro escrever códigos limpos e bem estruturados e tenho uma
+        empolgação quando vejo minhas ideias se tornarem realidade. Isso me
+        levou a me especializar no front-end, onde posso criar interfaces
+        incríveis e interativas para os usuários, mas meu objetivo é ser um
+        profissional completo sendo um full steak. <br /><br />
+        Sempre busco agregar valor em meus projetos e deixar minha "identidade
+        visual" neles, pois acredito que a qualidade e a personalidade são
+        fundamentais para o sucesso de um projeto. Atualmente estou estudando
+        React, uma popular biblioteca JavaScript para construção de interfaces
+        de usuário. <br /><br />
+        Estou a procura de uma oportunidade como programador, onde poderei
+        agregar meu valor nos projetos e tarefas que estarei realizando.
+      </div>
+    </div>
+    <div class="div-segunda flex-div" id="projetos">
+      <div class="div-top flex-div">
+        <h1>Meus Projetos</h1>
+        <img class="vetor-pequeno" src="img/projtos.png" alt="Lupa" />
+      </div>
+      <div class="galeria flex-div">
+        <div class="flex-conteudo">
+          <a
+            href="https://rodrigodomenico.github.io/login-crm-2.0/index.html"
+            target="_blank"
+            ><img class="projeto" src="img/login-sistema.png"
+          /></a>
+        </div>
+
+        <div class="flex-conteudo">
+          <a href="https://rodrigodomenico.github.io/login-crm/" target="_blank"
+            ><img class="projeto" src="img/imagem-projeto3.JPG"
+          /></a>
+        </div>
+
+        <div class="flex-conteudo">
+          <a
+            href="https://github.com/rodrigodomenico/Projeto-Sistema-ODS-VB"
+            target="_blank"
+            ><img class="projeto" src="img/Sistema-ODS.png"
+          /></a>
+        </div>
+
+        <div class="flex-conteudo">
+          <a href="" target="_blank"
+            ><img class="projeto" src="img/em-breve.png"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <div class="div-segunda flex-div" id="skills">
+      <div class="div-top flex-div">
+        <h1>Meus Certificados</h1>
+        <img class="vetor-pequeno" src="img/certificado.png" alt="Lupa" />
+      </div>
+      <div class="galeria flex-div">
+        <a
+          href="https://www.devmedia.com.br/certificado/tecnologia/html/rodrigo-rodzinski-de-domenico"
+          target="_blank"
+          ><img
+            class="projeto"
+            src="img/html.png"
+            style="padding: 3px; height: auto"
+        /></a>
+        <a
+          href="https://www.devmedia.com.br/certificado/tecnologia/css/rodrigo-rodzinski-de-domenico"
+          target="_blank"
+          ><img
+            class="projeto"
+            src="img/CSS.png"
+            style="padding: 3px; height: auto"
+        /></a>
+        <a
+          href="https://www.devmedia.com.br/certificado/tecnologia/javascript/rodrigo-rodzinski-de-domenico"
+          target="_blank"
+          ><img
+            class="projeto"
+            src="img/JavaScript.png"
+            style="padding: 3px; height: auto"
+        /></a>
+        <a
+          href="https://www.devmedia.com.br/certificado/tecnologia/algoritmo/rodrigo-rodzinski-de-domenico"
+          target="_blank"
+          ><img
+            class="projeto"
+            src="img/Algoritimo.png"
+            style="padding: 3px; height: auto"
+        /></a>
+        <a
+          href="https://www.devmedia.com.br/certificado/tecnologia/programacao/rodrigo-rodzinski-de-domenico"
+          target="_blank"
+          ><img
+            class="projeto"
+            src="img/Programacao.png"
+            style="padding: 3px; height: auto"
+        /></a>
+      </div>
+    </div>
+    <div class="div-segunda flex-div">
+      <div class="div-top flex-div" style="margin-bottom: 50px">
+        <h1 id="contatos">Contatos</h1>
+      </div>
+      <div class="box-icones flex-div">
+        <div class="icone">
+          <a href="mailto:rodriggorodzinski@gmail.com" target="_blank"
+            ><div class="circulo-icone">
+              <img style="padding: 1rem" src="img/mail.svg" /></div
+          ></a>
+          <a href="mailto:rodriggorodzinski@gmail.com"><p>E-mail</p></a>
+          <a href="mailto:rodriggorodzinski@gmail.com"
+            ><p style="color: #828282">rodriggorodzinski@gmail.com</p></a
+          >
+        </div>
+        <div class="icone">
+          <a
+            href="https://api.whatsapp.com/send?phone=5551991057825&text=Ol%C3%A1,%20vim%20pelo%20site,%20est%C3%A1%20disponivel?"
+            target="_blank"
+            ><div class="circulo-icone">
+              <img style="padding: 1rem" src="img/phone.svg" /></div
+          ></a>
+          <a
+            href="https://api.whatsapp.com/send?phone=5551991057825&text=Ol%C3%A1,%20vim%20pelo%20site,%20est%C3%A1%20disponivel?"
+            ><p>Telefone</p></a
+          >
+          <a
+            href="https://api.whatsapp.com/send?phone=5551991057825&text=Ol%C3%A1,%20vim%20pelo%20site,%20est%C3%A1%20disponivel?"
+            ><p style="color: #828282">(51) 99105-7825</p></a
+          >
+        </div>
+        <div class="icone">
+          <a
+            href="https://www.linkedin.com/in/rodrigorodzinski/"
+            target="_blank"
+            ><div class="circulo-icone">
+              <img style="padding: 1rem" src="img/linkedin.svg" /></div
+          ></a>
+          <a href="https://www.linkedin.com/in/rodrigorodzinski/">
+            <p>Linkedin</p>
+          </a>
+          <a href="https://www.linkedin.com/in/rodrigorodzinski/"
+            ><p style="color: #828282">@rodrigorodzinski</p></a
+          >
+        </div>
+        <div class="icone">
+          <a href="https://github.com/rodrigodomenico" target="_blank"
+            ><div class="circulo-icone">
+              <img style="padding: 1rem" src="img/github.svg" /></div
+          ></a>
+          <a href="https://github.com/rodrigodomenico"><p>Github</p></a>
+          <a href="https://github.com/rodrigodomenico"
+            ><p style="color: #828282">@rodrigorodzinski</p></a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
