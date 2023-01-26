@@ -143,7 +143,7 @@ body {
       flex-direction: column;
       align-items: center;
       width: 100%;
-      background: rgb(31 33 48 / 95% );
+      background: rgb(31 33 48 / 100% );
       backdrop-filter: blur( 11px );
       -webkit-backdrop-filter: blur( 11px );
       
