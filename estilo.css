@@ -142,8 +142,8 @@ body {
       display: none;
       flex-direction: column;
       align-items: center;
-      width: 50%;
-      background: rgba( 31, 33, 48, 0.65 );
+      width: 100%;
+      background: rgb(31 33 48 / 95% );
       backdrop-filter: blur( 11px );
       -webkit-backdrop-filter: blur( 11px );
       
