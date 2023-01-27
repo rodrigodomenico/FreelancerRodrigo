@@ -82,6 +82,7 @@ body {
     display: flex;
     justify-content: space-around;
     width: 30%;
+    
 
   }
 
@@ -103,15 +104,20 @@ body {
     font-size: 14px;
   }
 
+  .burger-disable{
+    display: flex;
+  }
+
   .burger {
     /*Não deixando o menu hambuguer visivel */
-    display: none;
+        display: none;
     /*aparecendo a maozinha quando clica no menu hambuguer*/
     cursor: pointer;
   }
 
   .burger div {
     /*Ajeitando o menu Hambuguer*/
+    
     width: 25px;
     height: 3px;
     background-color: white;
@@ -137,33 +143,47 @@ body {
       position: absolute;
       right: 0px;
       height: 92vh;
-      top: 8vh;
+      top: 0vh;
       /*Arrumando o menu hambuguer*/
-      display: none;
       flex-direction: column;
       align-items: center;
       width: 100%;
-      background: rgb(31 33 48 / 100% );
+      background: rgba(31, 33, 48, 0.925);
       backdrop-filter: blur( 11px );
       -webkit-backdrop-filter: blur( 11px );
+      -webkit-transform: translateX(400px);
       
       /*Ajeitando a transição parar abrir o menu hambuguer*/
-      transform: translateX(100%);
-      transition: transform 0.5s ease-in;
+      animation: animacao-2;
+      animation-duration: 1000ms;
+      transition: transform 1s ease-in;
+      
     }
 
     .nav-links li {
-      opacity: 0;
+      opacity: 1;
     }
 
     .burger {
       /*para aparecer o menu hambuguer quando a tela tiver pequena*/
       display: block;
     }
-  }
 
+    .burger-disable{
+    display: none;
+  }
+  }
+ 
   /*Quando se clica no menu hambuguer, consegue abrir os itens*/
   .nav-active {
+    transition: transform 0.6s ease-in-out;
+    display: flex;
+    animation: animacao-1;
+    animation-duration: 1000ms;
+  }
+
+  .nav-active {
+    transition: transform 0.6s ease-in-out;
     display: flex;
     transform: translateX(0%);
   }
@@ -171,13 +191,16 @@ body {
   /*Animações quando se clica no menu hamburguer*/
   @keyframes navLinkFade {
     from {
-      opacity: 0;
+      
+      transition: transform 0.6s ease-in-out;
       transform: translateX(50px);
     }
 
     to {
-      opacity: 1;
-      transform: translateX(0px);
+    animation: animacao-2;
+    animation-duration: 1000ms;
+    transition: transform 0.6s ease-in-out;
+      
     }
   }
 
@@ -195,16 +218,41 @@ body {
     transform: rotate(45deg) translate(-5px, -6px);
   }
 
+  @keyframes animacao-1 {
+    0%{
+      -webkit-transform: translateX(400px);
+    }
+
+    100% {
+      -webkit-transform: translateX(0);
+    }
+  }
+
+   @keyframes animacao-2 {
+    0%{
+      -webkit-transform: translateX(0px);
+      display: flex;
+      opacity: 1;
+    }
+
+    100% {
+      -webkit-transform: translateX(400px);
+      display: none;
+      opacity: 0;
+    }
+  }
+
 
   @media screen and (max-width: 768px) {
     .nav-links.nav-active li {
+          transition: transform 0.6s ease-in-out;
       opacity: 1;
     }
   }
 
   .nav-links a:hover {
     transition: all .3s ease;
-    color: #9fa2ee
+    color: #9fa2ee;
   }
 
  .menu{
@@ -217,18 +265,10 @@ body {
     min-height: 14vh
 }
 
- .menu-alto-mob{
-   top:8vh;
-}
 
 .menu-baixo{
    transition: all .4s ease;
-    min-height: 8vh
-}
-
-.menu-baixo-mob{
-   transition: all .4s ease;
-   top:14vh;
+    min-height: 8vh;
 }
 
  /*Fim - 0 */
@@ -495,3 +535,5 @@ h4{
   font-size: 2vh;
 }
  }
+
+ 
