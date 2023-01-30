@@ -142,7 +142,7 @@ body {
     .nav-links {
       position: absolute;
       right: 0px;
-      height: 92vh;
+      height: 100vh;
       top: 0vh;
       /*Arrumando o menu hambuguer*/
       flex-direction: column;
