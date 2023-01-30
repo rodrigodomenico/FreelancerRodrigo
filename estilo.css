@@ -74,6 +74,7 @@ body {
     letter-spacing: 5px;
     /*Tamaho da letra*/
     font-size: 20px;
+    font-family: 'Kanit', sans-serif;
 
   }
 
@@ -102,6 +103,7 @@ body {
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 14px;
+    
   }
 
   .burger-disable{
@@ -148,10 +150,13 @@ body {
       flex-direction: column;
       align-items: center;
       width: 100%;
-      background: rgba(31, 33, 48, 0.925);
+      background: rgb(31 33 48 / 98%);
       backdrop-filter: blur( 11px );
       -webkit-backdrop-filter: blur( 11px );
       -webkit-transform: translateX(400px);
+      font-family: 'Kanit', sans-serif;
+      margin-left: 20px;
+
       
       /*Ajeitando a transição parar abrir o menu hambuguer*/
       animation: animacao-2;
