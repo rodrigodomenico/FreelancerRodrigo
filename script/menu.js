@@ -1,6 +1,7 @@
- const navSlide = () => {
+    const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
+    const body = document.querySelector('.Scroll')
     const fechar = document.querySelector('.fechar');
     //Fazendo aparecer os itens 
     const navLinks = document.querySelectorAll('.nav-links li');
@@ -8,15 +9,16 @@
     //Fazendo o clique do menu funcionar
     burger.addEventListener('click', () => {
       nav.classList.toggle('nav-active');
-     
-      
+      body.classList.toggle('ScrollFixo');
 
+    
       //Animações links
       navLinks.forEach((link, index) => {
         if (link.style.animation) {
           link.style.animation = '';
         } else {
           link.style.animation = `navlinkFade 0.5s ease forwards ${index/7+1.5}s`
+  
 
         }
       });
@@ -29,6 +31,7 @@
      fechar.addEventListener('click', () => {
       $("ul").removeClass("nav-active").addClass("");
       $("div").removeClass("toggle").addClass("");
+      $("body").removeClass("ScrollFixo").addClass("");
     
     });
 

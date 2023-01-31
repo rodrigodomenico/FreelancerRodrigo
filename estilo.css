@@ -237,6 +237,12 @@ body {
   }
 }
 
+.ScrollFixo{ 
+  
+  overflow: hidden;
+}
+
+
 
   /*Transformando o menu em X*/
   .toggle .line1 {
