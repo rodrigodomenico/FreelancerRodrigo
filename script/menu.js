@@ -2,7 +2,6 @@
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const fechar = document.querySelector('.fechar');
-    const fecharBody = document.querySelector('.fecharBody');
     //Fazendo aparecer os itens 
     const navLinks = document.querySelectorAll('.nav-links li');
 
