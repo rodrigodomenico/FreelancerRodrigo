@@ -211,19 +211,7 @@ body {
     }
   }
 
-  /*Transformando o menu em X*/
-  .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-
-  .toggle .line2 {
-    opacity: 0;
-
-  }
-
-  .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
+   /*ANIMACAO DO MENU ABRIR E FECHAR MOBILE*/
 
   @keyframes animacao-1 {
     0%{
@@ -249,7 +237,20 @@ body {
   }
 }
 
-   
+
+  /*Transformando o menu em X*/
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 
 
   @media screen and (max-width: 768px) {
