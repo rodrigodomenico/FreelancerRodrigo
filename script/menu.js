@@ -28,6 +28,8 @@
 
     });
 
+    // Poder fechar o menu ao clicar nos links ou na div do menu mobile
+
      fechar.addEventListener('click', () => {
       $("ul").removeClass("nav-active").addClass("");
       $("div").removeClass("toggle").addClass("");
