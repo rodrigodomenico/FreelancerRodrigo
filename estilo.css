@@ -151,12 +151,15 @@ body {
       /*Arrumando o menu hambuguer*/
       flex-direction: column;
       align-items: center;
-      background: rgb(31 33 48 / 98%);
-      backdrop-filter: blur( 11px );
       -webkit-backdrop-filter: blur( 11px );
       -webkit-transform: translateX(100vh);
       font-family: 'Kanit', sans-serif;
       margin-left: 20px;
+      background: linear-gradient(90deg, rgb(0 0 0 / 0%) 40%, rgb(31 33 48 / 93%) 40%);
+      padding-left: 20vh;
+
+
+     
 
       
       /*Ajeitando a transição parar abrir o menu hambuguer*/
